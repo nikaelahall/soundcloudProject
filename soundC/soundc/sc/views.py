@@ -15,7 +15,7 @@ def songlist(request):
     except Exception as err:
             print("test")
             print(err)
-    return render(request, 'sc/song_list.html', {})
+    return render(request, 'sc/song_list.html', {'data': data})
 
 
 """Testing"""""

@@ -1,9 +1,8 @@
 {% block content %}
-    {% for Article in articles %}
-
-
-
-    {% endfor %}
+    {% for track in data %}
+        <li>{{ track.title }}
+        {{ track.permalink_url }} </li>
+     {% endfor %}
 {% endblock %}
 
 
