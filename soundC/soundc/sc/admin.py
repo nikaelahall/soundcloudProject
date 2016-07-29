@@ -1,4 +1,8 @@
 from django.contrib import admin
 from .models import songSc
 
-admin.site.register(songSc)
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ['title', 'permalink_url']
+
+admin.site.register(songSc, PostAdmin)
